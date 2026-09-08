@@ -1,0 +1,5 @@
+import math
+sidea = int(input("Enter the length of a: "))
+sideb = int(input("Enter the length of b: "))
+hypotenuse = math.sqrt(pow(sidea,2) + pow(sideb,2))
+print(hypotenuse)
