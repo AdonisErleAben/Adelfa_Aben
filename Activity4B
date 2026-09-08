@@ -1,0 +1,9 @@
+#This is a program which helps you calculate the hypotenuse of a right triangle.
+import math
+#Enter side a of the right triangle.
+sidea = int(input("Enter the length of  side a: "))
+#Enter side b of the right triangle.
+sideb = int(input("Enter the length of side b: "))
+hypotenuse = math.sqrt(pow(sidea,2) + pow(sideb,2))
+print(hypotenuse)
+#Get your result
