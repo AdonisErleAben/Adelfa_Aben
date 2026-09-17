@@ -1,0 +1,9 @@
+valid_payment = ["Cash", "GCash", "Card"]
+
+payment = input("Please enter your payment method (Cash, GCash, Card): ")
+
+if payment in valid_payment:
+    print("Valid payment method")
+
+else:
+    print("Invalid payment method")
