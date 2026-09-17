@@ -1,0 +1,7 @@
+pin = input("Enter your 4-digit PIN: ")
+
+if len(pin) == 4:
+    print("Valid PIN")
+
+else :
+    print("Invalid PIN")
