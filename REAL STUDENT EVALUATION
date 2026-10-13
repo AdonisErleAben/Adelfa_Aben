@@ -1,0 +1,40 @@
+def display_header():
+    print("Student Performance Evaluator")
+    print("-----------------------------")
+display_header()
+name = input("Enter Student Name: ")
+score1 = float(input("Enter Assessment Score1: "))
+score2 = float(input("Enter Assessment Score2: "))
+score3 = float(input("Enter Assessment Score3: "))
+
+def get_student_info():
+
+    return name,score1,score2,score3
+
+
+score4 = (score1 + score2 + score3) / 3
+if score4 >= 90:
+    performance_level = "Outstanding"
+elif score4 >= 85:
+    performance_level = "Very Satisfactory"
+elif score4 >= 80:
+    performance_level = "Satisfactory"
+elif score4 >= 75:
+    performance_level = "Fairly Satisfactory"
+else:
+    performance_level = "Needs Improvement"
+
+def evaluate_performance():
+    return score4, performance_level
+def display_report():
+    print (name)
+    print (f"Assessment scores: {score1},{score2},{score3}")
+    print (f"Average Score: {score4:.2f}")
+    print (f"Performance Level: {performance_level}")
+
+get_student_info()
+print("STUDENT PERFORMANCE REPORT")
+evaluate_performance()
+display_report()
+#Global Variables: name, score1, score2, score3, score4, performance_level
+#no local variables
